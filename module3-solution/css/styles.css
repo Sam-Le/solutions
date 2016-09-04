@@ -1,0 +1,162 @@
+body {
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #e1a08a; /* pink - same color as in footer */
+  border-radius: 0;
+  border: 0;
+}
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #951C49; /*maroon*/
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 0.1;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+#nav-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#nav-list a {
+  color: #951C49; /*maroon*/
+  text-align: center;
+  border: 1px solid #61122f; /* dark maroon*/
+}
+#nav-list a:hover {
+  background: #E7E7E7; /*light gray*/
+}
+#nav-list a span {
+  font-size: 1.5em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f; /* dark maroon*/
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #e1a08a; /* pink - same color as in header */
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #557c3e; /*green*/
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+/* END FOOTER */
+
+/* HOME PAGE */
+
+#chicken-tile, #beef-tile, #sushi-tile {
+  height: 1000px; /*required in step 11 of Module 3 Coding Assignment */
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F; /*black*/
+  background-color: #8ae1a0; /*light green*/
+}
+#chicken-tile span, #beef-tile span, #sushi-tile span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.3em;
+  text-transform: capitalize;
+  background-color: #e1a08a; /* brown and pink*/
+  color: #fff; /*white*/
+  opacity: .8;
+}
+#chicken-tile div, #beef-tile div, #sushi-tile div {
+  padding: 20px;
+}
+/* END HOME PAGE */
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 25px;
+    font-size: 4vw; /* 1vw = 1% of viewport width */
+  }
+  /* End Header */
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
+
+  /* Home Page */
+  #chicken-tile, #beef-tile, #sushi-tile {
+    width: 450px;
+    margin: 0 auto 15px;
+  }
+}
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 25px;
+    font-size: 5vw;
+  }
+  /* End Header */
+  /* Home Page */
+  #chicken-tile, #beef-tile, #sushi-tile {
+    width: 300px;
+    margin: 0 auto 15px;
+  }
+}
+
+
+
